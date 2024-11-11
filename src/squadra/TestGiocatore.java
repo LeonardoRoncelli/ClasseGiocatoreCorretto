@@ -13,21 +13,25 @@ public class TestGiocatore {
                     "5 - Visualizzazione di giocatore con più di 5 goal \n"+
                     "6 - Visualizzazione del capitano \n"+
                     "7 - Assegnazione del capitano in modo casuale \n"+
-                    "8 - Uscita \n"+
-                    "Inserisci la tua scelta ");
+                    "8 - Uscita \n");
+            System.out.print("Inserisci la tua scelta: ");
             scelta=input.nextInt();
             switch (scelta){
                 case 1:{
                     String nome;
                     String capitano;
                     int goal;
+                    Giocatore giocatoreAggiunto=new Giocatore();
                     System.out.print("Inserisci il nome del giocatore: ");
                     nome= input.next();
+                    giocatoreAggiunto.setNome(nome);
                     System.out.print("Inserisci se è capitano: ");
                     capitano= input.next();
+                    giocatoreAggiunto.setCapitano(capitano);
                     System.out.print("Inserisci il numero di goal: ");
                     goal= input.nextInt();
-                    squadra.aggiunta(nome,capitano,goal);
+                    giocatoreAggiunto.setGoal(goal);
+                    squadra.aggiunta(giocatoreAggiunto);
                     break;
                 }
             }
