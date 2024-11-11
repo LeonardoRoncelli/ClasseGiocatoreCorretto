@@ -59,6 +59,7 @@ public class TestGiocatore {
                     System.out.print("Inserisci la posizione del giocatore da cancellare: ");
                     posCancella= input.nextInt();
                     squadra.cancella(posCancella);
+                    break;
                 }
             }
         }while (scelta!=8);
