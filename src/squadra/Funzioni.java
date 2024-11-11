@@ -47,4 +47,8 @@ public class Funzioni {
             System.out.println("La posizione è vuota, non puoi modificarla!");
         }
     }
+    public void cancella(int posCancella){
+        giocatori[posCancella]=null;
+        System.out.println("Giocatore cancellato");
+    }
 }

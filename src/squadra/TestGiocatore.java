@@ -54,6 +54,12 @@ public class TestGiocatore {
                     squadra.modifica(posizione,nome,capitano,goal);
                     break;
                 }
+                case 4:{
+                    int posCancella;
+                    System.out.print("Inserisci la posizione del giocatore da cancellare: ");
+                    posCancella= input.nextInt();
+                    squadra.cancella(posCancella);
+                }
             }
         }while (scelta!=8);
     }
