@@ -34,6 +34,9 @@ public class TestGiocatore {
                     squadra.aggiunta(giocatoreAggiunto);
                     break;
                 }
+                case 2:{
+                    System.out.println(squadra.visualizza());
+                }
             }
         }while (scelta!=8);
     }

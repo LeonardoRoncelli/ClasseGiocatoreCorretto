@@ -22,4 +22,20 @@ public class Funzioni {
             }
         }
     }
+    public String[] visualizza(){
+        int conta=0;
+        int agg;
+        for(int i=0;i<giocatori.length;i++){
+            if(giocatori[i]!=null){
+                conta++;
+            }
+        }
+        agg=conta;
+        String[]visualizzaGioc=new String[conta];
+        for(int i=0;i<visualizzaGioc.length;i++){
+            visualizzaGioc[i]="Nome: "+giocatori[agg].getNome()+", Capitano: "+giocatori[agg].getCapitano()+", Goal:"+giocatori[agg].getGoal();
+            agg--;
+        }
+        return visualizzaGioc;
+    }
 }
