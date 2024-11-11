@@ -38,4 +38,13 @@ public class Funzioni {
         }
         return visualizzaGioc;
     }
+    public void modifica(int posizione,String nome,String capitano,int goal){
+        if(giocatori[posizione]!=null){
+            giocatori[posizione].setNome(nome);
+            giocatori[posizione].setCapitano(capitano);
+            giocatori[posizione].setGoal(goal);
+        }else {
+            System.out.println("La posizione è vuota, non puoi modificarla!");
+        }
+    }
 }
